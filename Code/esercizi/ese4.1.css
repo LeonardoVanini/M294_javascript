@@ -1,0 +1,18 @@
+.rosso {
+    color: red;
+}
+
+.ok {
+    color: green;
+    font-weight: bold;
+}
+.errore {
+    color: red;
+    font-weight: bold;
+}
+
+.test{
+    position: fixed;
+    x: 0;
+    y: 0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catalogo con Carrello (semplice + elimina)</title>
+    <link rel="stylesheet" href="ese7.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Catalogo</h1>
+        <button id="cartButton" class="cartButton">
+            <img class="cartButton" src="Img/cart.png">
+            <div style="top: 100px;">
+                <p>5</p>
+            </div>
+        </button>
+    </header>
+    
+
+    <div class="layout">
+        <!-- Prodotti -->
+        <main>
+            <section class="products" id="Computer"></section>
+            <section class="products" id="Smartphone"></section>
+            <section class="products" id="Accessori"></section>
+            <section class="products" id="Abbigliamento"></section>
+            <section class="products" id="Casa"></section>
+        </main>
+
+
+        <!-- Carrello -->
+        <aside class="cart">
+            <h2>Carrello</h2>
+            <ul id="cartList"></ul>
+            <div class="cart-footer">Totale: <strong id="cartTotal">CHF 0.00</strong></div>
+        </aside>
+        
+        
+    </div>
+    <script src="ese7.js"></script>
+</body>
+
+</html>

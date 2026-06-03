@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <h1>Mini Mail</h1>
+    <p class="subtitle">Scrivi, visualizza, modifica e elimina le email.</p>
+
+    <div class="row">
+
+        <!-- Identità utente -->
+        <div class="card">
+            <div class="card-title">Identità utente</div>
+
+            <label>Il tuo username</label>
+            <input id="username" type="text" placeholder="es. mario">
+
+            <button class="btn btn-secondary" id="btnFrom">Salva username</button>
+
+            <div class="status"></div>
+        </div>
+
+        <!-- Nuovo messaggio -->
+        <div class="card">
+            <div class="card-title">Nuovo messaggio</div>
+
+            <label>Destinatario</label>
+            <input id="to" type="text" placeholder="es. luca">
+
+            <label>Messaggio</label>
+            <textarea id="body" placeholder="Scrivi qui..."></textarea>
+
+            <button class="btn btn-primary" id="btnPreview">Mostra anteprima</button>
+
+            <!-- PREVIEW -->
+            <div class="preview-box">
+                <div class="preview-title">Anteprima messaggio</div>
+                <textarea id="preview" placeholder="L’anteprima apparirà qui..."></textarea>
+                <button class="btn btn-primary btn-sm" id="btnSend">Invia</button>
+            </div>
+
+            <div class="status"></div>
+        </div>
+
+    </div>
+
+    <!-- Inbox -->
+    <div class="card inbox-card">
+        <div class="inbox-header">
+            <div class="card-title">Posta in arrivo</div>
+            <div>
+                <button class="btn btn-secondary btn-sm" id="btnUpdate">Aggiorna</button>
+                <button class="btn btn-danger btn-sm" id="btnDelete">Elimina selezionati</button>
+            </div>
+        </div>
+
+        <div class="inbox-list" id="inbox-list">
+            
+            
+        </div>
+
+        <div class="status"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio vitae dolor fugiat dolorem eveniet, nulla tempora laborum quas tempore dignissimos quo dolores, maxime, aliquam officiis neque? Repellat minus harum odit.
+
+    </p>
+    <ul>
+        <li class="item">Item1</li>
+        <li class="item">Item2</li>
+        <li class="item">Item3</li>
+        <li class="item">Item4</li>
+        <li class="item">Item5</li>
+    </ul>
+
+    <script>
+        let txt = document.getElementById('txt')
+        let items = document.querySelectorAll('.item')
+        console.log(txt)
+        console.log(items)
+        for ( i of items) {
+            console.log(i.textContent)
+            
+        }
+        console.log(txt.textContent)
+        txt.textContent="ciao"
+        console.log(txt.textContent)
+
+
+        txt.innerHTML="<strong>Ciao Mondo</strong>"
+
+        //txt.outerHTML="<strong>Ciao Mondo</strong>"
+
+        let val =1
+
+        txt.textContent = `Ciao ${val}`
+        txt.classList.add('txt')
+       
+
+
+    </script>
+</body>
+</html>

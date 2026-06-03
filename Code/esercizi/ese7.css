@@ -1,0 +1,154 @@
+header{
+    display: flex;
+    gap: 800px;
+    margin-bottom: 100px;
+}
+.cartButton{
+    height: 48px;
+    width: 48px;
+    border-radius: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body {
+    font-family: system-ui, Arial;
+    margin: 16px;
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    margin: 8px 0 16px;
+}
+
+.layout {
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+}
+
+.cart {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fafafa;
+    min-width: 300px;
+    visibility:hidden;
+}
+
+.cartShow{
+    visibility:visible;
+}
+
+#cartList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cartList li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+#cartList li:last-child {
+    border-bottom: 0;
+}
+
+.riga {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.remove {
+    padding: 4px 8px;
+    border: 0;
+    border-radius: 4px;
+    background: #ef4444;
+    color: #fff;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background: #b91c1c;
+}
+
+.addSub {
+    padding: 4px 8px;
+    border: 0;
+    border-radius: 4px;
+    background: #e7a23a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.addSub:hover {
+    background: #aa772b;
+}
+
+.cart-footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.products {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.name {
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.price {
+    color: #0a7a27;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.controls {
+    margin-bottom: 8px;
+}
+
+.qty {
+    width: 60px;
+    text-align: center;
+}
+
+button {
+    padding: 6px 10px;
+    border: 0;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}

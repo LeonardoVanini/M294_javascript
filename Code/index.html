@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+            background-color: #ebebeb;
+        }
+        button {
+            background-color: rgb(41, 41, 85);
+            color: white;
+        }
+
+        h1{
+            margin: 0px 0px 30px 0px ;
+        }
+        
+        form{
+            display: flexbox;
+            flex-direction: column;
+        }
+        div{
+            background-color: white;
+            width:100%;
+            padding: 20px;
+            row-gap: 20px;
+            height: fit-content;
+        }
+        div.checkbox{
+            padding: 0;
+            display: flexbox;
+            flex-direction: row;
+        }
+        input{
+            width: fit-content;
+            margin: 10px 0px;
+        }
+        input.normal{
+            width: 100%;
+            height: 30px;
+            margin: 10px 0px;
+        }
+        textarea{
+            width: 100%;
+            max-width: 100%;
+        }
+        label{
+            
+            width: 100%;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            margin-top: 20px;
+            border: none;
+            
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            Let's level up your<br>brand, together
+        </h1>
+
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="normal" placeholder="Your name">
+             
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="normal" placeholder="you@company.com">
+             
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" class="normal" placeholder="+1(555)000-0000">
+             
+            <label for="description">How can we help?</label>
+            <textarea name="description" id="description" placeholder="Tell us a little about the project"></textarea>
+             
+            <label for="service">Services</label>
+            <div class="checkbox">
+                <input type="checkbox" name="service" id="website" value="1">
+                <label for="website">Website design</label>
+            </div> 
+            <div class="checkbox"> 
+                <input type="checkbox" name="service" id="ux" value="2">
+                <label for="ux">UX design</label>
+            </div> 
+            <div class="checkbox">
+                <input type="checkbox" name="service" id="u_research" value="3">
+                <label for="u_research">User research</label>
+            </div>
+
+            <button type="submit" id="started">Get started</button>
+            
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
